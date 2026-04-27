@@ -1,2 +1,2 @@
 # pizza-delivery
-SAAS para uma pizaria fictícia. A senha para os funcionários é "funcionario".
+SAAS para uma pizzaria fictícia. A senha para os funcionários é "funcionario".
