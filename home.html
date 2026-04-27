@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Delivery</title>
+</head>
+<body>
+    <header>
+        <H1>Pizza-Delivery</H1>
+        <h2>
+            A melhor pizza da cidade, entregue na sua casa!
+        </h2>
+    </header>
+
+    <main>
+        <div class="tamanho">
+            <h3>Escolha o tamanho da sua pizza:</h3>
+            <button id="mini" onclick="size(this)">mini</button>
+            <button id="pequena" onclick="size(this)">Pequena</button>
+            <button id="media" onclick="size(this)">Média</button>
+            <button id="grande" onclick="size(this)">Grande</button>
+        </div>
+        <div class="sabores">
+            <h3>Escolha o sabor da sua pizza:</h3>
+            <h4>Sabores salgados:</h4>
+            <button id="mussarela" onclick="flavor(this)">Mussarela</button>
+            <button id="calabresa" onclick="flavor(this)">Calabresa</button>
+            <button id="portuguesa" onclick="flavor(this)">Portuguesa</button>
+            <button id="frango-catupiry" onclick="flavor(this)">Frango com Catupiry</button>
+            <button id="vegetariana" onclick="flavor(this)">Vegetariana</button>
+            <h4>Sabores doces:</h4>
+            <button id="chocolate" onclick="flavor(this)">Chocolate</button>
+            <button id="banana-com-canela" onclick="flavor(this)">Banana com Canela</button>
+            <button id="prestigio" onclick="flavor(this)">Prestígio</button>
+            <button id="chocolate-branco" onclick="flavor(this)">Chocolate Branco</button>
+        </div>
+        <div class="acompanhamentos">
+            <h3>Escolha os acompanhamentos:</h3>
+            <h4>Refrigerantes:</h4>
+            <input list="refrigerantes" name="refrigerante" id="refrigerante" placeholder="insira aqui...">
+            <datalist id="refrigerantes">
+                <option value="Coca-Cola lata"></option>
+                <option value="Coca-Cola 2l"></option>
+                <option value="Guaraná lata"></option>
+                <option value="Guaraná 2l"></option>
+                <option value="Fanta Laranja lata"></option>
+                <option value="Fanta Laranja 2l"></option>
+                <option value="Sprite lata"></option>
+                <option value="Sprite 2l"></option>
+            </datalist>
+            <h4>Molho extra:</h4>
+            <input list="molhos" name="molho" id="molho" placeholder="insira aqui...">
+            <datalist id="molhos">
+                <option value="Ketchup"></option>
+                <option value="Mostarda"></option>
+                <option value="Maionese"></option>
+                <option value="Barbecue"></option>
+            </datalist>
+        </div>
+        <div class="especificacoes">
+            <h3>Especificações adicionais:</h3>
+            <textarea id="especificacoes" rows="4" cols="50" placeholder="Digite aqui suas especificações..."></textarea>
+            <button onclick="revisar()">Revisar Pedido</button>
+        </div>
+        <div class="botao">
+            <button onclick="revisar()">Revisar Pedido</button>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Tem dúvidas ou encontrou problemas? Entre em contato conosco!</h4>
+        <h5>4002-8922 | contato@pizzadelivery.com | @pizzadelivery_oficial</h5>
+        <p>&copy; 2024 Pizza Delivery. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

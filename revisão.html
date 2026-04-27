@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Delivery</title>
+</head>
+<body>
+    <header>
+        <H1>Pizza-Delivery</H1>
+        <h2>
+            A melhor pizza da cidade, entregue na sua casa!
+        </h2>
+    </header>
+
+    <main>
+        <h3>Revise seu pedido:</h3>
+        
+        <form id="form-pedido" method="POST" action="http://127.0.0.1:5000/api/pedidos-form">
+            <div class="resumo">
+                <h4 id="resumo-tamanho">Tamanho da pizza: </h4>
+                <h4 id="resumo-sabor">Sabor da pizza: </h4>
+                <h4 id="resumo-refrigerante">Refrigerante: </h4>
+                <h4 id="resumo-molho">Molho extra: </h4>
+                <h4 id="resumo-especificacoes">Especificações adicionais: </h4>
+                
+                <input type="hidden" name="tamanho" id="input-tamanho">
+                <input type="hidden" name="sabores" id="input-sabores">
+                <input type="hidden" name="refrigerante" id="input-refrigerante">
+                <input type="hidden" name="molho" id="input-molho">
+                <input type="hidden" name="observacoes" id="input-observacoes">
+
+                <button type="submit" href="index.html">Confirmar Pedido</button>
+            </div>
+        </form>
+        
+        <div class="botao">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
